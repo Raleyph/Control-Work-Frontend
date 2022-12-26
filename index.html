@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <title>#fuckrussianinvasion</title>
+</head>
+<body>
+    <div class="back"></div>
+
+    <div class="main">
+        <h1 class="main-text">ДОПОМОЖИ НАШИМ ВОЇНАМ!</h1>
+        <h2 class="description">Від російської агресії вже постраждало більше 200.000 українців</h2>
+        <div class="main-button">
+            <a href="#help" class="btn">Як це зробити?</a>
+        </div>
+    </div>
+
+    <section class="help" id="help">
+        <div class="help-methods">
+            <h1 class="main-help-text">ЯК ВИ МОЖЕТЕ ДОПОМОГТИ?</h1>
+            <div class="help-container">
+                <div class="box">
+                    <h1 class="box-title">Переказати кошти</h1>
+                    <h2 class="box-description">
+                        Існує багато сервісів, які дозволяють зробити переказ коштів на рахунок ЗСУ або волонтерів.
+                    </h2>
+                </div>
+                <div class="box">
+                    <h1 class="box-title">Придбати продукти та амуніцію</h1>
+                    <h2 class="box-description">
+                        Ви можете придбати продукти харчування, біноклі, тепловізори, дрони, одяг та інші елементи
+                        екіпіювання, та передати їх напряму військовим, або через волонтерів.
+                    </h2>
+                </div>
+                <div class="box">
+                    <h1 class="box-title">Вступити до кібервійська</h1>
+                    <h2 class="box-description">
+                        Знаєшься на інформаційній безпеці? Тоді ти можеш допомогти на інформаційному фронті,
+                        роблячи DOS-атаки на сайти рф, деанімізувати особистості військових, які приймають
+                        участь у війні, та заважати пропаганді.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-description" id="footer-description">
+        <div class="help-methods">
+            <h1 class="main-help-text">ПРОТИ ЧОГО МИ БОРИМОСЬ?</h1>
+            <div class="footer-container">
+                <h2 class="footer-description">
+                    24 лютого 2022 року російська федерація вторглася на територію незалежної України та почала
+                    захоплювати наші землі, а також знищувати інфраструктуру та вбивати мирне населення.
+                </h2>
+                <h2 class="footer-description">
+                    Робіть все можливе, щоб війна не торкнулась вас та вашої родини: не ігноруйте сигнали
+                    повітрянної тривоги, вибирайте безпечні маршрути при поїздках країною, та допомагайте
+                    військовим, волонтерам, лікарям, співробітникам МВС тощо.
+                </h2>
+                <h2 class="footer-description">
+                    Разом переможемо! Слава Україні!
+                </h2>
+
+                <div class="video">
+                    <h2 class="video-title"><br>Документальний фільм про вторгнення рф в Україну</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/swY7FE1wDOc?start=127"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="help-methods">
+        <h2 class="copyright">© Makar Bobukh, 2022</h2>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 10, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
